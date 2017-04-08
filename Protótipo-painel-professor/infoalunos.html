@@ -68,20 +68,32 @@
 			</div>
 		</nav>
 	</header>
-	<section id="conteudo-depoimentos">
+	<section id="conteudo-listagem-alunos">
 		<div class="container">
 			<h1><i class="fa fa-comment" aria-hidden="true"></i>&nbsp;&nbsp;Alunos da Fábrica</h1>
 			<div class="border-dotted"></div>
 			<div class="row">
+				<div class="col-md-12">
+					<center><select name="campus" id="buscar-por-campus" class="form-control">
+						<option value="">Selecione o campus...</option>
+						<option value="1">Santo Amaro</option>
+						<option value="2">Memorial</option>
+						<option value="3">Vila Prudente</option>
+					</select></center>
+				</div>
 			</div>
+			
+			
 			<div class="row">
+				
 				<table class="table table-bordered">
                     <thead>
                         <tr>
-                            <td>Nome</td>
-                            <td>Curso</td>
-                            <td>Cargo</td>
-                            <td>Data de entrada</td>
+                            <th>Nome</th>
+                            <th>Curso</th>
+                            <th>Cargo</th>
+                            <th>Data de entrada</th>
+							<th>Ação</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -98,14 +110,7 @@
                     </tbody>
 				</table>
 			</div>
-			<div class="edit-depoimento">
-				<div class="row">
-					<div class="col-md-12 textarea">
-						<textarea name="depoimento" class="form-control">Depoimento aqui</textarea>
-					</div>
-				</div>
-				
-			</div>
+			
 		</div>
 
 	</section>

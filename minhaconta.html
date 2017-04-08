@@ -116,6 +116,20 @@
 					</div>
 					<div class="row">
 						<div class="col-md-12">
+							<input type="hidden" name="trocou-senha" id="trocou-senha" value="N">
+							<input type="button" class="btn btn-primary" id="trocar-senha" value="TROCAR SENHA">
+							<div id="mostrar-senha"> 
+								<div class="input-group border_senha">
+									<div class="input-group-addon tirar-borda-right"><i class="fa fa-lock" aria-hidden="true"></i></div>
+									<input type="password" name="senha" id="senha" class="form-control tirar-borda-left valida-form tirar-borda" placeholder="Senha">
+									<div class="input-group-addon tirar-bordar-left-ecolor senha_info"></div>
+								</div>
+								<p id="info_senha"></p>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12">
 							<div class="input-group">
 						      <div class="input-group-addon tirar-borda-right"><i class="fa fa-facebook-official" aria-hidden="true"></i></div>
 						      <input type="text" class="form-control tirar-borda-left" id="facebook" placeholder="Facebook">
@@ -160,7 +174,7 @@
 <script src="js/jquery.js"></script>
 <script src="css/bootstrap/js/bootstrap.js"></script>
 <script>
-	$(".valida-form").blur(function(){
+	$("body").on("blur",".valida-form",function(){
 		var valor = $(this).val();
 		var nome = $(this).attr("name");
 		if(valor === ""){
@@ -173,5 +187,11 @@
 			$("."+nome+"_info").html("<i class='fa fa-check' style='color:green;' aria-hidden='true'></i>");
 			$("#info_"+nome).html("");
 		}
+	});
+	
+	$("#trocar-senha").click(function(){
+		$("#mostrar-senha").css({"display":"block"});
+		$(this).css({"display":"none"});
+		$("#trocou-senha").val("S");
 	});
 </script>

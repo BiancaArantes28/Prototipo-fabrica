@@ -71,7 +71,7 @@ header nav .menu ul li .notificacoes-menu a {
   height: 500px;
 }
 #conteudo-minhaconta {
-  height: 600px;
+  height: 700px;
   padding: 0px;
 }
 #conteudo-minhaconta h1 {
@@ -93,6 +93,12 @@ header nav .menu ul li .notificacoes-menu a {
 }
 #conteudo-minhaconta .row {
   margin-top: 30px;
+}
+#conteudo-minhaconta .row #trocar-senha:hover {
+  background-color: #285f8f;
+}
+#conteudo-minhaconta .row #mostrar-senha {
+  display: none;
 }
 #conteudo-minhaconta .tirar-borda-right {
   border-right: none;

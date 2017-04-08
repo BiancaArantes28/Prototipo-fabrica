@@ -119,6 +119,15 @@ header{
 	}
 	.row{
 		margin-top:30px;
+		#trocar-senha{
+			
+			&:hover{
+				background-color:darken(#337ab7,10);
+			}
+		}
+		#mostrar-senha{
+			display:none;
+		}
 	}
 	.tirar-borda-right{
 		border-right:none;
@@ -195,6 +204,27 @@ header{
 	}
 }
 
+#conteudo-listagem-alunos{
+	height:550px;
+
+	h1{
+		color:@cor-titulo;
+	}
+
+	.border-dotted{
+		border:1px dotted @cor-titulo;
+	}
+
+	.row{
+		margin-top:30px;
+		#buscar-por-campus{
+			width:25%;
+			
+		}
+		
+	}
+
+}
 footer{
 	width:100%;
 	height:60px;

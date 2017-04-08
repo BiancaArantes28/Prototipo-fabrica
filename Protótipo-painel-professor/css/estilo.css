@@ -94,6 +94,12 @@ header nav .menu ul li .notificacoes-menu a {
 #conteudo-minhaconta .row {
   margin-top: 30px;
 }
+#conteudo-minhaconta .row #trocar-senha:hover {
+  background-color: #285f8f;
+}
+#conteudo-minhaconta .row #mostrar-senha {
+  display: none;
+}
 #conteudo-minhaconta .tirar-borda-right {
   border-right: none;
   background-color: #fff;
@@ -159,6 +165,21 @@ header nav .menu ul li .notificacoes-menu a {
 #conteudo-depoimentos .edit-depoimento .botaosalvar .salvar:hover {
   background-color: #009900;
   color: #fff;
+}
+#conteudo-listagem-alunos {
+  height: 550px;
+}
+#conteudo-listagem-alunos h1 {
+  color: #DCDCDC;
+}
+#conteudo-listagem-alunos .border-dotted {
+  border: 1px dotted #DCDCDC;
+}
+#conteudo-listagem-alunos .row {
+  margin-top: 30px;
+}
+#conteudo-listagem-alunos .row #buscar-por-campus {
+  width: 25%;
 }
 footer {
   width: 100%;
